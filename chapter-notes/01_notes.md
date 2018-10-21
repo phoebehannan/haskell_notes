@@ -28,7 +28,7 @@ functions modeled on mathematical functions"
   return the same result when given the same values to evaluate.
 
 
-## 1.3 What is a Function 
+## 1.3 What is a Function
 
 **Function**: "a function is a relation between a set of possible inputs and a
 set of possible outputs."
@@ -80,4 +80,37 @@ set of possible outputs."
 * *currying* is when functions that require multiple arguments have multiple
   nested heads. 
 
-* 
+## 1.7 Evaluation is Simplification
+
+* *beta normal form* is when an expression cannot be reduced further through
+  beta reduction, and means the expression is fully evaluated.
+
+## 1.8 Combinators
+
+* Combinators are lambda terms with no free variables and *combine* the
+  arguments they are given. (\x.x and \xy.x are combinators, while \x.xy is not)
+
+## 1.9 Divergence
+
+* divergence meas that the reduction process never terminates or ends. This
+  means that the expression can never reach *beta normal form* Eg (\x.xx)
+  (\x.xx) creates an infinite loop.
+
+## 1.10 Summary
+
+* "Functional programming is basedc on expressions that include variables or
+  constant values, expressions combined with other expressions, and functions."
+
+* "Functions have a head and a body and are those expressions that can be
+  applied to arguments and reduced, or evaluated, to a result."
+
+* "Variables may be bound in the function declaration, and every time a bound
+  variable shows up in a function, it has the same value."
+
+* "All functions take one argument and return one result."
+
+* "Functions are a mapping of a set of inputs to a set of outputs. Given the
+  same input, they always return the same result."
+
+  
+
